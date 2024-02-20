@@ -6,10 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-        <center>
+    <form align="center">
             <h1>Sign up here...</h1>
             <div>
+                <table align="center" cellpadding="5">
+                    <tr><th>Firstname: <td><input type="text" required>  </td>  </th></tr>
+                    <tr><th>Lastname: <td><input type="text"></td></th></tr>
+                    <tr><th>DOB: <td><input type="date" required></td></th></tr>
+                    <tr><th>Single?<td><input type="checkbox"></td></th></tr>
+                    <tr><th>Password: <td> <input type="password" required> </td> </th></tr>
+
+                </table>
+
+
+                <!--
                 <label for="firstname">Firstname:</label>
                 <input type="text" name="firstname" required>
                 <br><br>
@@ -18,10 +28,11 @@
                 <br><br>
                 <label for="phone">Mobile Number: </label>
                 <input type="number" name="phone" required>
+                -->
+
             </div>
             <br><br>
             <button type="submit" formaction="./login_page.html">Sign Up!</button>
-        </center>
     </form>
 </body>
 </html>
