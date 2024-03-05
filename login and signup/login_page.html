@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <style>
-
+        .right {
+            display: inline-flex;
+            align-items: center;
+        }
     </style>
 </head>
 
-<body>
+<body style="background-color: aquamarine; " >
     <center>
     <div class="login">
+        <img src="./Chaitanya_Bharathi_Institute_of_Technology_logo.png" height="280px" width="300px">
+        <h1>CBIT Login Page:    </h1>
         <h1>Enter your credentials...</h1>
         <form>
             <label for="username">Username:</label>
@@ -25,9 +30,22 @@
             <br>
     
             <button type="submit" formaction="./welcome.html">Login</button>
+            <br>
+
+
+            
             
         </form>   
+
+        <form>
+            <div class="right">
+                <h4>Are you new?   </h4> 
+                <button type="submit" formaction="./signup.html">  sign up</button>
+            </div>        
+        </form>
+
     </div>
+
     </center>
 </body>
 </html>
