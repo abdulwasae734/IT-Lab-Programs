@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        .bg {
+            background-image: url(./assets/fast-food-pic.avif);
+            height: 100%;
+            width: 100%;
+            /* filter: blur(2px); */
+            position: fixed;
+            background-size: cover;
+            z-index: -1;
+            left: 0;
+            top: 0;
+        }
+
+        .signup {
+            background-color: darkgrey;
+            width: fit-content;
+            border-radius: 5%;
+            padding: 5px 25px;
+            opacity: calc(92%);
+            
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        button {
+            cursor: pointer;
+            border: 15px 15px;
+        }
+
+
+    </style>
+</head>
+<body style="background-color: aquamarine;">
+    <div class="bg"></div>
+    <form align="center">
+        <div class="signup">
+            <h1>Sign up!</h1>
+            <div>
+                <table align="center" cellpadding="5">
+                    <tr><th>Firstname: <td><input type="text" required>  </td>  </th></tr>
+                    <tr><th>Lastname: <td><input type="text"></td></th></tr>
+                    <tr><th>DOB: <td><input type="date" required></td></th></tr>
+                    <tr><th>Password: <td> <input type="password" required> </td> </th></tr>
+
+                </table>
+
+
+            </div>
+            <br><br>
+            <button #loong type="submit" formaction="./login_page.html">Sign Up!</button>
+        </div>
+        
+    </form>
+</body>
+</html>

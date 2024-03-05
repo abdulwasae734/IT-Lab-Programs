@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg {
+            background-image: url(./assets/bgimg.avif);
+            height: 100%;
+            width: 100%;
+            /* filter: blur(2px); */
+            position: fixed;
+            background-size: cover;
+            z-index: -1;
+            opacity: 90%;
+            left: 0;
+            top: 0;
+        }
+        .welcome {
+            background-color: darkgrey;
+            width: fit-content;
+            border-radius: 5%;
+            padding: 5px 25px;
+            opacity: calc(92%);
+            
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body style="background-color: aquamarine;">
+    <div class="bg"></div>
+    <div class="welcome">
+        <center><h1>Welcome!!!</h1>
+            <form>
+                <button type="submit" formaction="./Restaurant_menu.html">Menu</button>
+            </form>
+            
+        </center>
+    </div>
+
+</body>
+</html>
