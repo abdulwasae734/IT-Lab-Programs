@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <style>
+        table {
+            border-collapse: collapse;
+
+        }
+
+        th, td {
+            border: 5px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+
+        th, .week {
+            background-color: #f2f2f2;
+        }
+        .lab-cell {
+            background-color: lightgreen; 
+        }
+
+        .lunch-cell {
+            writing-mode: vertical-rl;
+            font-size: 2rem;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>Class Timetable</h2>
+    <table>
+        <tr>
+            <th>Day/Period</th>
+            <th>9:00 AM</th>
+            <th>10:00 AM</th>
+            <th>11:00 AM</th>
+
+            <th>12:00 PM</th>
+            <th>1:00 PM</th>
+            <th>2:00 PM</th>
+            <th>3:00 PM</th>
+        </tr>
+        <tr>
+            <td class="week"><b>Monday</b></td>
+            <td>English</td>
+            <td>Math</td>
+            <td>Chemistry</td>
+            <td rowspan="6" class="lunch-cell" #vertical>L <br> U N C H</td>
+            <td colspan="2" class="lab-cell">Physics Lab</td>
+            <td>Chemistry</td>
+        </tr>
+        <tr>
+            <td class="week" ><b>Tuesday</b></td>
+            <td class="lab-cell" colspan="3">WT Lab</td>
+            <!-- <td class="lunch-cell"></td> -->
+            <td>English</td>
+            <td>Chemistry</td>
+            <td>Mathematics</td>
+        </tr>
+        <tr>
+            <td class="week" ><b>Wednesday</b></td>
+            <td>Maths</td>
+            <td>Physics</td>
+            <td>English</td>
+            <!-- <td class="lunch-cell"></td> -->
+            <td>Telugu</td>
+            <td>Hindi</td>
+            <td>Library</td>
+        </tr>
+        <tr>
+            <td class="week" ><b>Thursday</b></td>
+            <td>Physics</td>
+            <td>English</td>
+            <td>Chemistry</td>
+            <!-- <td class="lunch-cell"></td> -->
+            <td colspan="3" class="lab-cell">DAA Lab</td>
+        </tr>
+        <tr>
+            <td class="week" ><b>Friday</b></td>
+            <td class="lab-cell" colspan="2">BE&S Lab</td>
+            <td>Maths</td>
+            <!-- <td class="lunch-cell"></td> -->
+            <td>Chemistry</td>
+            <td>English</td>
+            <td>Physics</td>
+        </tr>
+        <tr>
+            <td class="week" ><b>Saturday</b></td>
+            <td>English</td>
+            <td>Chemistry</td>
+            <td>Seminar</td>
+            <!-- <td class="lunch-cell"></td> -->
+            <td>English</td>
+            <td>Math</td>
+            <td>Science</td>
+        </tr>
+    </table>
+</body>
+</html>
